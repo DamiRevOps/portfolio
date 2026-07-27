@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damilola Oudah | RevOps Analyst & Systems Architect</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accentBlue: '#3b82f6',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-accentCyan animate-pulse"></span>
+                DAMILOLA OUDAH
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accentCyan transition-colors">About</a>
+                <a href="#projects" class="hover:text-accentCyan transition-colors">Systems & Projects</a>
+                <a href="#experience" class="hover:text-accentCyan transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-accentCyan transition-colors">Core Stack</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="mailto:damilola.oudah@gmail.com" class="bg-accentBlue hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-lg shadow-blue-500/20">
+                    <i class="fa-regular fa-envelope mr-2"></i>Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 border-b border-slate-800/60 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-accentCyan text-xs font-semibold mb-6 uppercase tracking-wider">
+                <i class="fa-solid fa-code-merge"></i> RevOps Analyst & Systems Architect
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Architecting Data Pipelines & <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentBlue to-accentCyan">Autonomous Systems</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Bridging raw marketplace data and executive decision-making. I build dynamic pricing algorithms, automated inventory audit layers, and domain-specific AI platforms that protect gross margins and scale operations.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#projects" class="bg-accentBlue hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-lg shadow-blue-500/25 flex items-center gap-2">
+                    <i class="fa-solid fa-laptop-code"></i> Explore My Systems
+                </a>
+                <a href="#experience" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-xl border border-slate-700 transition-all">
+                    View Professional Background
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Systems & Featured Projects -->
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">Engineering & Architecture Portfolio</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">Production-grade systems built to solve real-world B2B and e-commerce operational friction.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1: AI Listing Intelligence Platform -->
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-cyan-950/80 text-accentCyan border border-cyan-800/50 rounded-full text-xs font-semibold">AI Architecture</span>
+                        <i class="fa-solid fa-brain text-accentCyan text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Industrial Listing Intelligence Platform</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        A domain-specific AI knowledge platform leveraging Google AI Studio to automate industrial product classification, marketplace category mapping, and attribute standardization prior to ERP/e-commerce publication.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Google AI Studio</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Data Quality Validation</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Catalog Automation</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Statistical Dynamic Pricing Engine -->
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-blue-950/80 text-accentBlue border border-blue-800/50 rounded-full text-xs font-semibold">DAX / Power Pivot</span>
+                        <i class="fa-solid fa-chart-line text-accentBlue text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Market-Aware Dynamic Pricing Engine</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Engineered an advanced pricing model combining eBay APIs, Power Query, and sophisticated DAX. Automatically filters market outliers (P10/P90) and adjusts target percentiles using volatility spread ratios.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Advanced DAX</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Power Query</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">eBay API</span>
+                </div>
+            </div>
+
+            <!-- Project 3: Inventory Audit & Management System -->
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group md:col-span-2 lg:col-span-1">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-emerald-950/80 text-emerald-400 border border-emerald-800/50 rounded-full text-xs font-semibold">Google Apps Script</span>
+                        <i class="fa-solid fa-warehouse text-emerald-400 text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Enterprise Inventory & Audit System</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        An 8-tab operations management suite featuring dedicated audit workflows, on-demand PDF report exporting, and automated Apps Script email triggers for low-stock and out-of-stock items.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Google Apps Script</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">PDF Generation</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Automated Triggers</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="py-24 px-6 max-w-4xl mx-auto border-t border-slate-800">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">Professional Experience</h2>
+            <p class="text-slate-400">Track record of driving commercial growth and operational optimization.</p>
+        </div>
+
+        <div class="space-y-12">
+            
+            <!-- Experience 1 -->
+            <div class="relative pl-8 border-l-2 border-accentBlue">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accentBlue ring-4 ring-darkBg"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                    <h3 class="text-xl font-bold text-white">Commercial Data Analyst / RevOps Lead</h3>
+                    <span class="text-sm font-medium text-accentCyan">2021 – Present</span>
+                </div>
+                <p class="text-sm text-slate-400 font-medium mb-4">World of Controls (Industrial Automation & Equipment) | Ras Al Khaimah, UAE</p>
+                <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                    <li>Engineered a dynamic, market-aware pricing engine using marketplace APIs and advanced DAX to protect gross margins across industrial components.</li>
+                    <li>Manage daily e-commerce operations for global suppliers of Motion Controls, HVAC, and Electrical Equipment, ensuring absolute storefront accuracy.</li>
+                    <li>Restructured shipping rate tables through granular sales record analysis, achieving a direct 20% profit increase for targeted price tiers.</li>
+                    <li>Deployed automated ETL data cleaning pipelines using Power Query and RegEx for seamless multi-channel catalog synchronization.</li>
+                </ul>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-darkBg"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                    <h3 class="text-xl font-bold text-white">Freelance BI & Pricing Analyst</h3>
+                    <span class="text-sm font-medium text-slate-400">Mar 2024 – Feb 2025</span>
+                </div>
+                <p class="text-sm text-slate-400 font-medium mb-4">Scientific Equipment Trading | Remote</p>
+                <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                    <li>Managed a database of 3,000+ scraped auction products across four platforms, expanding store inventory capacity by 35%.</li>
+                    <li>Built automated ParseHub web scraping templates and leveraged AI/Google Sheets to clean and transform auction pricing data.</li>
+                    <li>Designed bidding calculators that evaluated marketplace competitiveness and streamlined post-win storefront listing workflows.</li>
+                </ul>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-darkBg"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                    <h3 class="text-xl font-bold text-white">Data Wrangler Freelancer</h3>
+                    <span class="text-sm font-medium text-slate-400">Jan 2021 – Jun 2021</span>
+                </div>
+                <p class="text-sm text-slate-400 font-medium mb-4">Latro Telecommunications | Dubai, UAE</p>
+                <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                    <li>Maintained and debugged automated KNIME server workflows for end-to-end fraud detection pipelines.</li>
+                    <li>Executed robust ETL processes culminating in scheduled anomaly reporting via automated email triggers.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Core Stack / Skills Section -->
+    <section id="skills" class="py-20 px-6 max-w-5xl mx-auto border-t border-slate-800">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Core Competencies & Technology Stack</h2>
+            <p class="text-slate-400 text-sm">The technical toolkit driving modern operational efficiency.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                <h4 class="text-accentCyan font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-database"></i> Data Analysis & BI</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">SQL, Advanced Excel, Power Query, Power Pivot, DAX, Google Sheets (Apps Script / JavaScript), BigQuery, KNIME Analytics.</p>
+            </div>
+            <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                <h4 class="text-accentBlue font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-cart-shopping"></i> E-Commerce & Operations</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">Storefront Management (eBay, Shopify, Amazon, Walmart), SEO Optimization, CRO, Dynamic Pricing, ZIK Analytics, Terapeak.</p>
+            </div>
+            <div class="bg-cardBg p-6 rounded-xl border border-slate-800 sm:col-span-2 md:col-span-1">
+                <h4 class="text-emerald-400 font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-gears"></i> Automation & AI</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">Google AI Studio, ParseHub Web Scraping, Workflow Automation, RegEx Data Validation, ETL Pipeline Design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
+            <h3 class="text-xl font-bold text-white">Let's Connect & Optimize Your Operations</h3>
+            <p class="text-slate-400 text-sm max-w-md">Currently open for select roles in Revenue Operations, Business Intelligence, and Commercial Data Analysis in the UAE.</p>
+            <div class="flex items-center gap-6 mt-4">
+                <a href="mailto:damilola.oudah@gmail.com" class="text-slate-300 hover:text-accentCyan transition-colors"><i class="fa-solid fa-envelope text-xl"></i></a>
+                <a href="tel:+971554079060" class="text-slate-300 hover:text-accentCyan transition-colors"><i class="fa-solid fa-phone text-xl"></i></a>
+            </div>
+            <p class="text-slate-600 text-xs mt-8">© 2026 Damilola Oudah. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
