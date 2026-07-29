@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damilola Oudah | RevOps Analyst & Systems Architect</title>
+    <!-- Tailwind CSS CDN for styling utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Custom Tailwind configuration for dark theme palette and accents
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accentBlue: '#3b82f6',
+                        accentCyan: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome stylesheet for iconography -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white">
+
+    <!-- Header Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo / Name with Pulse Indicator -->
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-accentCyan animate-pulse"></span>
+                DAMILOLA OUDAH
+            </a>
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-accentCyan transition-colors">About</a>
+                <a href="#projects" class="hover:text-accentCyan transition-colors">Systems & Projects</a>
+                <a href="#experience" class="hover:text-accentCyan transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-accentCyan transition-colors">Core Stack</a>
+            </nav>
+            <!-- Call-To-Action Contact Button -->
+            <div class="flex items-center gap-4">
+                <a href="mailto:damilola.oudah@gmail.com" class="bg-accentBlue hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-lg shadow-blue-500/20">
+                    <i class="fa-regular fa-envelope mr-2"></i>Contact Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Introduction Section -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 border-b border-slate-800/60 relative overflow-hidden">
+        <!-- Background Glow Effect -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <!-- Subtitle Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-accentCyan text-xs font-semibold mb-6 uppercase tracking-wider">
+                <i class="fa-solid fa-code-merge"></i> RevOps Analyst & Systems Architect
+            </div>
+            <!-- Main Hero Headline -->
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Architecting Data Pipelines & <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentBlue to-accentCyan">Autonomous Systems</span>
+            </h1>
+            <!-- Hero Description Paragraph -->
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Bridging raw marketplace data and executive decision-making. I build dynamic pricing algorithms, automated inventory audit layers, and domain-specific AI platforms that protect gross margins and scale operations.
+            </p>
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#projects" class="bg-accentBlue hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-lg shadow-blue-500/25 flex items-center gap-2">
+                    <i class="fa-solid fa-laptop-code"></i> Explore My Systems
+                </a>
+                <a href="#experience" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-6 py-3 rounded-xl border border-slate-700 transition-all">
+                    View Professional Background
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering & Architecture Portfolio Section -->
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">Engineering & Architecture Portfolio</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">Production-grade systems built to solve real-world B2B and e-commerce operational friction.</p>
+        </div>
+
+        <!-- Grid Container for Project Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project Card 1: AI Listing Intelligence Platform -->
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-cyan-950/80 text-accentCyan border border-cyan-800/50 rounded-full text-xs font-semibold">AI Architecture</span>
+                        <i class="fa-solid fa-brain text-accentCyan text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Industrial Listing Intelligence Platform</h3>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                        A domain-specific AI knowledge platform leveraging Google AI Studio to automate industrial product classification, marketplace category mapping, and attribute standardization prior to ERP/e-commerce publication.
+                    </p>
+                    
+                    <!-- Clickable Screenshot Preview Container (Primary Image for AI Listing Platform) -->
+                    <div class="mb-6 relative rounded-lg overflow-hidden border border-slate-700/60 group-hover:border-cyan-500/40 transition-colors cursor-pointer" onclick="openModal('images/Industrial Listing Assistant_page-0001.jpg', 'Industrial Listing Intelligence Platform')">
+                        <img src="images/Industrial Listing Assistant_page-0001.jpg" alt="Industrial Listing Intelligence Platform" class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-cyan-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-expand"></i> View Full Screenshot
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Google AI Studio</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Data Quality Validation</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Catalog Automation</span>
+                </div>
+            </div>
+
+            <!-- Project Card 2: Market-Aware Dynamic Pricing Engine -->
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-blue-950/80 text-accentBlue border border-blue-800/50 rounded-full text-xs font-semibold">DAX / Power Pivot</span>
+                        <i class="fa-solid fa-chart-line text-accentBlue text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Market-Aware Dynamic Pricing Engine</h3>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                        Engineered an advanced pricing model combining eBay APIs, Power Query, and sophisticated DAX. Automatically filters market outliers (P10/P90) and adjusts target percentiles using volatility spread ratios.
+                    </p>
+                    
+                    <!-- Clickable Screenshot Preview Container (Primary Image for Pricing Engine) -->
+                    <div class="mb-6 relative rounded-lg overflow-hidden border border-slate-700/60 group-hover:border-accentBlue/40 transition-colors cursor-pointer" onclick="openModal('images/Excel Pricing Model.jpg', 'Market-Aware Dynamic Pricing Engine')">
+                        <img src="images/Excel Pricing Model.jpg" alt="Excel Pricing Model Dashboard" class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-accentBlue text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-expand"></i> View Full Screenshot
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Advanced DAX</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Power Query</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">eBay API</span>
+                </div>
+            </div>
+
+            <!-- Project Card 3: Enterprise Inventory & Audit System -->
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group md:col-span-2 lg:col-span-1">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-emerald-950/80 text-emerald-400 border border-emerald-800/50 rounded-full text-xs font-semibold">Google Apps Script</span>
+                        <i class="fa-solid fa-warehouse text-emerald-400 text-xl group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Enterprise Inventory & Audit System</h3>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                        An 8-tab operations management suite featuring dedicated audit workflows, on-demand PDF report exporting, and automated Apps Script email triggers for low-stock and out-of-stock items.
+                    </p>
+                    
+                    <!-- Clickable Screenshot Preview Container (Primary Image for Inventory System) -->
+                    <div class="mb-6 relative rounded-lg overflow-hidden border border-slate-700/60 group-hover:border-emerald-500/40 transition-colors cursor-pointer" onclick="openModal('images/Inventory Management System - Google Sheets.jpg', 'Enterprise Inventory Management System')">
+                        <img src="images/Inventory Management System - Google Sheets.jpg" alt="Inventory Management System" class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-emerald-600 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-expand"></i> View Full Screenshot
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Google Apps Script</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">PDF Generation</span>
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md">Automated Triggers</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline Section -->
+    <section id="experience" class="py-24 px-6 max-w-4xl mx-auto border-t border-slate-800">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">Professional Experience</h2>
+            <p class="text-slate-400">Track record of driving commercial growth and operational optimization.</p>
+        </div>
+
+        <div class="space-y-12">
+            
+            <!-- Timeline Item 1: World of Controls -->
+            <div class="relative pl-8 border-l-2 border-accentBlue">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accentBlue ring-4 ring-darkBg"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                    <h3 class="text-xl font-bold text-white">Commercial Data Analyst / RevOps Lead</h3>
+                    <span class="text-sm font-medium text-accentCyan">2021 – Present</span>
+                </div>
+                <p class="text-sm text-slate-400 font-medium mb-4">World of Controls (Industrial Automation & Equipment) | Ras Al Khaimah, UAE</p>
+                <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                    <li>Engineered a dynamic, market-aware pricing engine using marketplace APIs and advanced DAX to protect gross margins across industrial components.</li>
+                    <li>Manage daily e-commerce operations for global suppliers of Motion Controls, HVAC, and Electrical Equipment, ensuring absolute storefront accuracy.</li>
+                    <li>Restructured shipping rate tables through granular sales record analysis, achieving a direct 10% profit increase for targeted price tiers.</li>
+                    <li>Deployed automated ETL data cleaning pipelines using Power Query and RegEx for seamless multi-channel catalog synchronization.</li>
+                </ul>
+            </div>
+
+            <!-- Timeline Item 2: Scientific Equipment Trading -->
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-darkBg"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                    <h3 class="text-xl font-bold text-white">Freelance BI & Pricing Analyst</h3>
+                    <span class="text-sm font-medium text-slate-400">Mar 2024 – Feb 2025</span>
+                </div>
+                <p class="text-sm text-slate-400 font-medium mb-4">Scientific Equipment Trading | Remote</p>
+                <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                    <li>Managed a database of 3,000+ scraped auction products across four platforms, expanding store inventory capacity by 35%.</li>
+                    <li>Built automated ParseHub web scraping templates and leveraged AI/Google Sheets to clean and transform auction pricing data.</li>
+                    <li>Designed bidding calculators that evaluated marketplace competitiveness and streamlined post-win storefront listing workflows.</li>
+                </ul>
+            </div>
+
+            <!-- Timeline Item 3: Latro Telecommunications -->
+            <div class="relative pl-8 border-l-2 border-slate-700">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-darkBg"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                    <h3 class="text-xl font-bold text-white">Data Wrangler Freelancer</h3>
+                    <span class="text-sm font-medium text-slate-400">Jan 2021 – Jun 2021</span>
+                </div>
+                <p class="text-sm text-slate-400 font-medium mb-4">Latro Telecommunications | Dubai, UAE</p>
+                <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+                    <li>Maintained and debugged automated KNIME server workflows for end-to-end fraud detection pipelines.</li>
+                    <li>Executed robust ETL processes culminating in scheduled anomaly reporting via automated email triggers.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Core Competencies & Technology Stack Section -->
+    <section id="skills" class="py-20 px-6 max-w-5xl mx-auto border-t border-slate-800">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">Core Competencies & Technology Stack</h2>
+            <p class="text-slate-400 text-sm">The technical toolkit driving modern operational efficiency.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Skill Category 1: Data Analysis & BI -->
+            <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                <h4 class="text-accentCyan font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-database"></i> Data Analysis & BI</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">SQL, Advanced Excel, Power Query, Power Pivot, DAX, Google Sheets (Apps Script), BigQuery, Google Data Studio (Looker), Power BI, KNIME Analytics.</p>
+            </div>
+            <!-- Skill Category 2: E-Commerce & Operations -->
+            <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                <h4 class="text-accentBlue font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-cart-shopping"></i> E-Commerce & Operations</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">Storefront Management (eBay, Shopify, Amazon, Walmart), SEO Optimization, CRO, Dynamic Pricing, ZIK Analytics, Terapeak.</p>
+            </div>
+            <!-- Skill Category 3: Automation & AI -->
+            <div class="bg-cardBg p-6 rounded-xl border border-slate-800 sm:col-span-2 md:col-span-1">
+                <h4 class="text-emerald-400 font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-gears"></i> Automation & AI</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">Google AI Studio, ParseHub Web Scraping, Workflow Automation, RegEx Data Validation, ETL Pipeline Design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 px-6 text-center">
+        <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
+            <h3 class="text-xl font-bold text-white">Let's Connect & Optimize Your Operations</h3>
+            <p class="text-slate-400 text-sm max-w-md">Currently open for select roles in Revenue Operations, Business Intelligence, and Commercial Data Analysis in the UAE.</p>
+            <div class="flex items-center gap-6 mt-4">
+                <a href="mailto:damilola.oudah@gmail.com" class="text-slate-300 hover:text-accentCyan transition-colors"><i class="fa-solid fa-envelope text-xl"></i></a>
+                <a href="tel:+971554079060" class="text-slate-300 hover:text-accentCyan transition-colors"><i class="fa-solid fa-phone text-xl"></i></a>
+            </div>
+            <p class="text-slate-600 text-xs mt-8">© 2026 Damilola Oudah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Full-Screen Image Lightbox Modal Component -->
+    <div id="screenshotModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-cardBg border border-slate-700 rounded-2xl max-w-5xl w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+            <!-- Modal Header -->
+            <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between">
+                <h3 id="modalTitle" class="text-lg font-bold text-white">System Screenshot</h3>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 w-8 h-8 rounded-full flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Modal Body Container for Image View with Thumbnails/Gallery Support -->
+            <div class="p-6 overflow-auto flex-grow flex flex-col items-center justify-center bg-slate-900/50 gap-4">
+                <img id="modalImage" src="" alt="Expanded System Screenshot" class="max-w-full max-h-[60vh] object-contain rounded-lg shadow-md border border-slate-800">
+                <!-- Gallery Thumbnails Switcher Container -->
+                <div id="modalGalleryThumbnails" class="flex flex-wrap gap-3 justify-center mt-2">
+                    <!-- Dynamically populated via openModal script -->
+                </div>
+            </div>
+            <!-- Modal Footer -->
+            <div class="px-6 py-3 border-t border-slate-800 bg-slate-900 flex justify-between items-center">
+                <span id="modalImageCounter" class="text-xs text-slate-400 font-mono">Viewing image 1 of 1</span>
+                <button onclick="closeModal()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg text-sm font-medium transition-colors">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client-Side Modal Control Scripts -->
+    <script>
+        // System image gallery sets mapped to their respective titles
+        const projectGalleries = {
+            "Industrial Listing Intelligence Platform": [
+                "images/Industrial Listing Assistant_page-0001.jpg",
+                "images/Industrial Listing Assistant_page-0002.jpg",
+                "images/Industrial Listing Assistant_page-0003.jpg"
+            ],
+            "Market-Aware Dynamic Pricing Engine": [
+                "images/Excel Pricing Model.jpg",
+                "images/Excel_Pricing_Data_Model.jpg",
+                "images/Excel_Pricing_Power_Query.jpg"
+            ],
+            "Enterprise Inventory & Audit System": [
+                "images/Inventory Management System - Google Sheets.jpg",
+                "images/Inventory Management System - Audit page.jpg",
+                "images/Inventory Management System - Audit Report PDF.jpg",
+                "images/Inventory Management System - Low stock-Out of stock email.jpg"
+            ]
+        };
+
+        let currentActiveGallery = [];
+        let currentIndex = 0;
+        let currentProjectTitle = "";
+
+        /**
+         * Opens the full-screen screenshot inspection modal and builds gallery switchers if multiple images exist.
+         * @param {string} imageSrc - Initial file path to display.
+         * @param {string} titleText - Descriptive title of the project system.
+         */
+        function openModal(imageSrc, titleText) {
+            const modal = document.getElementById('screenshotModal');
+            currentProjectTitle = titleText;
+            currentActiveGallery = projectGalleries[titleText] || [imageSrc];
+            currentIndex = currentActiveGallery.indexOf(imageSrc);
+            if (currentIndex === -1) currentIndex = 0;
+
+            updateModalView();
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        /**
+         * Updates the modal image, counter, and gallery thumbnails.
+         */
+        function updateModalView() {
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const counterEl = document.getElementById('modalImageCounter');
+            const thumbsContainer = document.getElementById('modalGalleryThumbnails');
+
+            modalImage.src = currentActiveGallery[currentIndex];
+            modalTitle.textContent = currentProjectTitle;
+            counterEl.textContent = `Viewing image ${currentIndex + 1} of ${currentActiveGallery.length}`;
+
+            // Build gallery switcher thumbnails dynamically
+            thumbsContainer.innerHTML = '';
+            if (currentActiveGallery.length > 1) {
+                currentActiveGallery.forEach((src, idx) => {
+                    const thumbBtn = document.createElement('button');
+                    thumbBtn.className = `w-16 h-12 rounded-md overflow-hidden border-2 transition-all ${idx === currentIndex ? 'border-accentBlue scale-105 shadow-lg' : 'border-slate-700 opacity-60 hover:opacity-100'}`;
+                    thumbBtn.onclick = () => {
+                        currentIndex = idx;
+                        updateModalView();
+                    };
+                    
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.alt = `Thumbnail ${idx + 1}`;
+                    img.className = 'w-full h-full object-cover';
+                    
+                    thumbBtn.appendChild(img);
+                    thumbsContainer.appendChild(thumbBtn);
+                });
+            }
+        }
+
+        /**
+         * Closes the full-screen screenshot inspection modal and restores body scroll.
+         */
+        function closeModal() {
+            const modal = document.getElementById('screenshotModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto'; 
+        }
+
+        // Global click listener to dismiss modal when clicking outside the container box
+        window.onclick = function(event) {
+            const modal = document.getElementById('screenshotModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>
