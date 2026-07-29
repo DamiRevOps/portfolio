@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damilola Oudah | RevOps Analyst & Systems Architect</title>
+    <!-- Tailwind CSS CDN for styling utility classes -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+        // Custom Tailwind configuration for dark theme palette and accents
         tailwind.config = {
             theme: {
                 extend: {
@@ -19,22 +21,27 @@
             }
         }
     </script>
+    <!-- FontAwesome stylesheet for iconography -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white">
 
+    <!-- Header Navigation Bar -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo / Name with Pulse Indicator -->
             <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
                 <span class="w-3 h-3 rounded-full bg-accentCyan animate-pulse"></span>
                 DAMILOLA OUDAH
             </a>
+            <!-- Desktop Navigation Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-accentCyan transition-colors">About</a>
                 <a href="#projects" class="hover:text-accentCyan transition-colors">Systems & Projects</a>
                 <a href="#experience" class="hover:text-accentCyan transition-colors">Experience</a>
                 <a href="#skills" class="hover:text-accentCyan transition-colors">Core Stack</a>
             </nav>
+            <!-- Call-To-Action Contact Button -->
             <div class="flex items-center gap-4">
                 <a href="mailto:damilola.oudah@gmail.com" class="bg-accentBlue hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-lg shadow-blue-500/20">
                     <i class="fa-regular fa-envelope mr-2"></i>Contact Me
@@ -43,18 +50,24 @@
         </div>
     </header>
 
+    <!-- Hero Introduction Section -->
     <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 border-b border-slate-800/60 relative overflow-hidden">
+        <!-- Background Glow Effect -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="max-w-4xl mx-auto text-center relative z-10">
+            <!-- Subtitle Badge -->
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700 text-accentCyan text-xs font-semibold mb-6 uppercase tracking-wider">
                 <i class="fa-solid fa-code-merge"></i> RevOps Analyst & Systems Architect
             </div>
+            <!-- Main Hero Headline -->
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
                 Architecting Data Pipelines & <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentBlue to-accentCyan">Autonomous Systems</span>
             </h1>
+            <!-- Hero Description Paragraph -->
             <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Bridging raw marketplace data and executive decision-making. I build dynamic pricing algorithms, automated inventory audit layers, and domain-specific AI platforms that protect gross margins and scale operations.
             </p>
+            <!-- Hero Action Buttons -->
             <div class="flex flex-wrap items-center justify-center gap-4">
                 <a href="#projects" class="bg-accentBlue hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-lg shadow-blue-500/25 flex items-center gap-2">
                     <i class="fa-solid fa-laptop-code"></i> Explore My Systems
@@ -66,14 +79,17 @@
         </div>
     </section>
 
+    <!-- Engineering & Architecture Portfolio Section -->
     <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold text-white mb-4">Engineering & Architecture Portfolio</h2>
             <p class="text-slate-400 max-w-xl mx-auto">Production-grade systems built to solve real-world B2B and e-commerce operational friction.</p>
         </div>
 
+        <!-- Grid Container for Project Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
+            <!-- Project Card 1: AI Listing Intelligence Platform -->
             <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
@@ -92,6 +108,7 @@
                 </div>
             </div>
 
+            <!-- Project Card 2: Market-Aware Dynamic Pricing Engine (Includes Screenshot Thumbnail & Modal Trigger) -->
             <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group">
                 <div>
                     <div class="flex items-center justify-between mb-4">
@@ -103,6 +120,7 @@
                         Engineered an advanced pricing model combining eBay APIs, Power Query, and sophisticated DAX. Automatically filters market outliers (P10/P90) and adjusts target percentiles using volatility spread ratios.
                     </p>
                     
+                    <!-- Clickable Screenshot Preview Container -->
                     <div class="mb-6 relative rounded-lg overflow-hidden border border-slate-700/60 group-hover:border-accentBlue/40 transition-colors cursor-pointer" onclick="openModal('images/Excel Pricing Model.jpg', 'Market-Aware Dynamic Pricing Engine')">
                         <img src="images/Excel Pricing Model.jpg" alt="Excel Pricing Model Dashboard" class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -119,6 +137,7 @@
                 </div>
             </div>
 
+            <!-- Project Card 3: Enterprise Inventory & Audit System (Includes Screenshot Thumbnail & Modal Trigger) -->
             <div class="bg-cardBg border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-accentBlue/50 transition-all group md:col-span-2 lg:col-span-1">
                 <div>
                     <div class="flex items-center justify-between mb-4">
@@ -130,6 +149,7 @@
                         An 8-tab operations management suite featuring dedicated audit workflows, on-demand PDF report exporting, and automated Apps Script email triggers for low-stock and out-of-stock items.
                     </p>
                     
+                    <!-- Clickable Screenshot Preview Container -->
                     <div class="mb-6 relative rounded-lg overflow-hidden border border-slate-700/60 group-hover:border-emerald-500/40 transition-colors cursor-pointer" onclick="openModal('images/Inventory Management System - Google Sheets.jpg', 'Enterprise Inventory Management System')">
                         <img src="images/Inventory Management System - Google Sheets.jpg" alt="Inventory Management System" class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -149,6 +169,7 @@
         </div>
     </section>
 
+    <!-- Professional Experience Timeline Section -->
     <section id="experience" class="py-24 px-6 max-w-4xl mx-auto border-t border-slate-800">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold text-white mb-4">Professional Experience</h2>
@@ -157,6 +178,7 @@
 
         <div class="space-y-12">
             
+            <!-- Timeline Item 1: World of Controls -->
             <div class="relative pl-8 border-l-2 border-accentBlue">
                 <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accentBlue ring-4 ring-darkBg"></div>
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
@@ -172,6 +194,7 @@
                 </ul>
             </div>
 
+            <!-- Timeline Item 2: Scientific Equipment Trading -->
             <div class="relative pl-8 border-l-2 border-slate-700">
                 <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-darkBg"></div>
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
@@ -186,6 +209,7 @@
                 </ul>
             </div>
 
+            <!-- Timeline Item 3: Latro Telecommunications -->
             <div class="relative pl-8 border-l-2 border-slate-700">
                 <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-darkBg"></div>
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
@@ -202,6 +226,7 @@
         </div>
     </section>
 
+    <!-- Core Competencies & Technology Stack Section -->
     <section id="skills" class="py-20 px-6 max-w-5xl mx-auto border-t border-slate-800">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-white mb-2">Core Competencies & Technology Stack</h2>
@@ -209,14 +234,17 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Skill Category 1: Data Analysis & BI -->
             <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
                 <h4 class="text-accentCyan font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-database"></i> Data Analysis & BI</h4>
                 <p class="text-sm text-slate-300 leading-relaxed">SQL, Advanced Excel, Power Query, Power Pivot, DAX, Google Sheets (Apps Script), BigQuery, Google Data Studio (Looker), Power BI, KNIME Analytics.</p>
             </div>
+            <!-- Skill Category 2: E-Commerce & Operations -->
             <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
                 <h4 class="text-accentBlue font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-cart-shopping"></i> E-Commerce & Operations</h4>
                 <p class="text-sm text-slate-300 leading-relaxed">Storefront Management (eBay, Shopify, Amazon, Walmart), SEO Optimization, CRO, Dynamic Pricing, ZIK Analytics, Terapeak.</p>
             </div>
+            <!-- Skill Category 3: Automation & AI -->
             <div class="bg-cardBg p-6 rounded-xl border border-slate-800 sm:col-span-2 md:col-span-1">
                 <h4 class="text-emerald-400 font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-gears"></i> Automation & AI</h4>
                 <p class="text-sm text-slate-300 leading-relaxed">Google AI Studio, ParseHub Web Scraping, Workflow Automation, RegEx Data Validation, ETL Pipeline Design.</p>
@@ -224,6 +252,7 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="bg-slate-950 border-t border-slate-800 py-12 px-6 text-center">
         <div class="max-w-4xl mx-auto flex flex-col items-center justify-center gap-4">
             <h3 class="text-xl font-bold text-white">Let's Connect & Optimize Your Operations</h3>
@@ -236,45 +265,60 @@
         </div>
     </footer>
 
+    <!-- Full-Screen Image Lightbox Modal Component -->
     <div id="screenshotModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
         <div class="bg-cardBg border border-slate-700 rounded-2xl max-w-5xl w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+            <!-- Modal Header -->
             <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between">
                 <h3 id="modalTitle" class="text-lg font-bold text-white">System Screenshot</h3>
                 <button onclick="closeModal()" class="text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 w-8 h-8 rounded-full flex items-center justify-center transition-colors">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
+            <!-- Modal Body Container for Image View -->
             <div class="p-4 overflow-auto flex-grow flex items-center justify-center bg-slate-900/50">
                 <img id="modalImage" src="" alt="Expanded System Screenshot" class="max-w-full h-auto rounded-lg shadow-md border border-slate-800">
             </div>
+            <!-- Modal Footer -->
             <div class="px-6 py-3 border-t border-slate-800 bg-slate-900 flex justify-end">
                 <button onclick="closeModal()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg text-sm font-medium transition-colors">Close</button>
             </div>
         </div>
     </div>
 
+    <!-- Client-Side Modal Control Scripts -->
     <script>
+        /**
+         * Opens the full-screen screenshot inspection modal.
+         * @param {string} imageSrc - Relative file path to the high-res screenshot.
+         * @param {string} titleText - Descriptive title of the project system being inspected.
+         */
         function openModal(imageSrc, titleText) {
             const modal = document.getElementById('screenshotModal');
             const modalImage = document.getElementById('modalImage');
             const modalTitle = document.getElementById('modalTitle');
             
+            // Set dynamic source and header text
             modalImage.src = imageSrc;
             modalTitle.textContent = titleText;
             
+            // Display modal and disable body scrolling
             modal.classList.remove('hidden');
             modal.classList.add('flex');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden'; 
         }
 
+        /**
+         * Closes the full-screen screenshot inspection modal and restores body scroll.
+         */
         function closeModal() {
             const modal = document.getElementById('screenshotModal');
             modal.classList.remove('flex');
             modal.classList.add('hidden');
-            document.body.style.overflow = 'auto'; // Restore background scrolling
+            document.body.style.overflow = 'auto'; 
         }
 
-        // Close modal when clicking outside the modal box
+        // Global click listener to dismiss modal when clicking outside the container box
         window.onclick = function(event) {
             const modal = document.getElementById('screenshotModal');
             if (event.target === modal) {
